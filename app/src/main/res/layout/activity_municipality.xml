@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_default_background"
+    tools:context=".Municipality">
+
+    <!-- Municipality name -->
+    <TextView
+        android:id="@+id/municipalityNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/municipality_tianjin"
+        android:text="@string/municipality_placeholder"
+        android:textColor="@color/color_text_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Municipality image -->
+    <ImageView
+        android:id="@+id/municipalityImageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/beijing"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/municipality_image_description" />
+
+    <!-- Scrollable municipality information -->
+    <ScrollView
+        android:id="@+id/municipalityScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/municipalityInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/municipality_info_placeholder"
+            android:textColor="@color/color_text_dark"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+    </ScrollView>
+
+    <!-- Visit official website button -->
+    <Button
+        android:id="@+id/visitSiteButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:text="@string/visit_site"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/municipality_tianjin"
+        android:textColor="@color/color_text_light" />
+
+</LinearLayout>

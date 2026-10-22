@@ -11,4 +11,18 @@
 
     <string name="map_description">Map showing the municipalities of China</string>
 
+
+    <!-- Municipality detail screen strings -->
+    <string name="municipality_placeholder">Municipality</string>
+
+    <string name="municipality_info_placeholder">
+    Municipality information will appear here.
+</string>
+
+    <string name="municipality_image_description">
+    Photograph of the selected municipality
+</string>
+
+    <string name="visit_site">Visit site</string>
+
 </resources>
