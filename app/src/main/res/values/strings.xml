@@ -40,4 +40,8 @@
 </string>
 
 
+    <string name="error_open_website">
+    Unable to open the official website.
+</string>
+
 </resources>

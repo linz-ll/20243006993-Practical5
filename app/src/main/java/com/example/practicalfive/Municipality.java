@@ -15,6 +15,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
+import android.content.Intent;
+import android.content.ActivityNotFoundException;
+import android.net.Uri;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class Municipality extends AppCompatActivity {
 
@@ -70,6 +75,8 @@ public class Municipality extends AppCompatActivity {
 
         // Update the image, information and theme colours
         configureMunicipalityDetails(validName);
+
+        setupVisitSiteButton(validName);
     }
 
 
@@ -188,6 +195,65 @@ public class Municipality extends AppCompatActivity {
 
         nameTextView.setTextColor(titleAndButtonTextColor);
         visitSiteButton.setTextColor(titleAndButtonTextColor);
+    }
+
+
+    private void setupVisitSiteButton(String municipalityName) {
+
+        // Step 1: Find the Visit site button
+        Button visitSiteButton =
+                findViewById(R.id.visitSiteButton);
+
+        // Step 2: Select the official website
+        final String websiteUrl;
+
+        switch (municipalityName) {
+
+            case "Beijing":
+                websiteUrl = "https://english.beijing.gov.cn/";
+                break;
+
+            case "Shanghai":
+                websiteUrl = "https://english.shanghai.gov.cn/";
+                break;
+
+            case "Tianjin":
+                websiteUrl = "https://en.tj.gov.cn/";
+                break;
+
+            case "Chongqing":
+                websiteUrl = "https://english.cq.gov.cn/";
+                break;
+
+            default:
+                // Invalid municipality: do not open any website
+                return;
+        }
+
+        // Step 3: Register button click listener
+        visitSiteButton.setOnClickListener(view -> {
+
+            // Create an implicit intent to open the website
+            Intent websiteIntent = new Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse(websiteUrl)
+            );
+
+            // Step 4: Open the website safely
+            try {
+
+                startActivity(websiteIntent);
+
+            } catch (ActivityNotFoundException | SecurityException e) {
+
+                Toast.makeText(
+                        Municipality.this,
+                        getString(R.string.error_open_website),
+                        Toast.LENGTH_LONG
+                ).show();
+
+            }
+        });
     }
 
 
