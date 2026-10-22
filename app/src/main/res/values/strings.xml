@@ -25,4 +25,19 @@
 
     <string name="visit_site">Visit site</string>
 
+
+    <!-- Input validation messages -->
+    <string name="error_empty_municipality">
+    Please enter a municipality name.
+</string>
+
+    <string name="error_invalid_municipality">
+    Invalid municipality. Enter Beijing, Shanghai, Tianjin or Chongqing.
+</string>
+
+    <string name="error_missing_municipality">
+    No valid municipality was provided.
+</string>
+
+
 </resources>
