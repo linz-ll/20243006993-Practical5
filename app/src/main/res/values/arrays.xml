@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="municipalities_array">
+
+        <!-- Index 0: Beijing -->
+        <item>
+            Beijing is the capital of China and an important centre of
+            government, history, education, and culture. Located in
+            northern China, it has served as a capital during several
+            periods of Chinese history. The Forbidden City was home to
+            imperial courts, while the Temple of Heaven and the Summer
+            Palace reflect the art and architecture of earlier dynasties.
+            Famous sections of the Great Wall lie outside the urban
+            centre. Today, Beijing combines historic neighbourhoods
+            with modern business districts, universities, museums,
+            and extensive public transport. Visitors can explore
+            traditional hutong streets, major public squares, parks,
+            and a wide range of cultural attractions.
+        </item>
+
+        <!-- Index 1: Shanghai -->
+        <item>
+            Shanghai is a major city on the eastern coast of China,
+            located near the mouth of the Yangtze River. The Huangpu
+            River divides prominent central areas, including the
+            historic Bund and the modern skyline of Pudong. Shanghai
+            developed as an important trading port and remains a
+            significant centre for finance, shipping, commerce, and
+            culture. Its streets feature a mix of historic architecture,
+            contemporary towers, museums, and busy shopping areas.
+            Public transport connects many neighbourhoods across the
+            city. Shanghai is also known for its food, creative
+            industries, and waterfront views, reflecting both its
+            long commercial history and its continuing urban
+            development.
+        </item>
+
+        <!-- Index 2: Chongqing -->
+        <item>
+            Chongqing is a direct-administered municipality in
+            southwestern China, known for its mountainous landscape
+            and dramatic river scenery. The Yangtze and Jialing
+            rivers meet near its urban centre, and numerous bridges
+            connect neighbourhoods built across steep hills.
+            Chongqing has long been important for inland transport,
+            trade, and industry. Its busy streets, high-rise buildings,
+            and riverside districts form a distinctive cityscape.
+            The region is also associated with the Three Gorges
+            along the Yangtze River. Local cuisine is famous for
+            bold, spicy flavours, especially Chongqing hot pot.
+            Traditional communities, modern development, and
+            surrounding natural landscapes all contribute to
+            its distinctive character.
+        </item>
+
+        <!-- Index 3: Tianjin -->
+        <item>
+            Tianjin is a direct-administered municipality in northern
+            China, situated near the Bohai Sea and closely connected
+            to Beijing. The city developed as an important port and
+            trading centre, while the Hai River runs through its
+            urban areas. Parts of Tianjin contain architecture
+            influenced by periods of international trade, including
+            buildings around the Five Great Avenues. Popular
+            landmarks include the Tianjin Eye observation wheel
+            and Ancient Culture Street. Today, Tianjin plays a
+            major role in manufacturing, shipping, education, and
+            regional transport. Its museums, riverside views,
+            traditional markets, and local foods offer visitors a
+            mixture of historical and modern urban experiences.
+        </item>
+
+    </string-array>
+
+</resources>
